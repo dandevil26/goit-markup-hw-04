@@ -145,7 +145,7 @@ address {
 .order-section {
     padding-top: 188px;
     padding-bottom: 188px;
-    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(/images/people-office.png);
+    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office.png');
     max-width: 1440px;
     margin: 0 auto;
     background-repeat: no-repeat;
