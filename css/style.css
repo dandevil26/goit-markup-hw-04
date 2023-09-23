@@ -8,6 +8,7 @@
     --ocean: #404BBF;
     --text-color: #757575;
     --light-slate: #8E8F99;
+    --GREEN: #31D0AA;
 }
 
 body {
@@ -144,7 +145,12 @@ address {
 .order-section {
     padding-top: 188px;
     padding-bottom: 188px;
-    background: linear-gradient(to top, rgba(46, 47, 66, 0.70) 0%, rgba(46, 47, 66, 0.70) 100%), url('../images/people-office.png');
+    background: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url('../images/people-office.png');
+    max-width: 1440px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .order-header {
@@ -312,13 +318,29 @@ address {
 }
 
 .social-icons {
-    width: 40px;
-    height: 40px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    fill: var(--white);
 }
 
-
-.team-icons {
+.social-list {
+    background-color: var(--iris);
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-list:hover {
+    background-color: var(--ocean);
+}
+
+.team-social-icons {
+    display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
 }
 
@@ -357,8 +379,6 @@ address {
 }
 
 .client-icon-container {
-    border-radius: 4px;
-    border: 1px solid var(--light-slate);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -368,6 +388,7 @@ address {
     width: 104px;
     height: 56px;
     padding: 16px 32px;
+    cursor: pointer;
 }
 
 .footer-container {
@@ -377,10 +398,6 @@ address {
     margin-right: auto;
 }
 
-.footer-icon-container {
-    display: flex;
-    gap: 16px;
-}
 
 .footer-contents {
     display: flex;
@@ -406,8 +423,8 @@ address {
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 21px1.16em;
     text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .footer-logo1 {
@@ -425,6 +442,31 @@ address {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.5em;
+    margin-top: 8px;
+}
+
+.footer-social-list {
+    background-color: var(--iris);
+    border-radius: 22px;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-list:hover {
+    background-color: var(--GREEN);
+}
+
+.footer-social {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-social-icons {
+    display: inline-flex;
+    gap: 16px;
 }
 
 .button-container {
@@ -432,10 +474,6 @@ address {
     padding: 0px 15px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.feature-section {
-    padding: 96px 156px 120px 156px;
 }
 
 .buttons {
