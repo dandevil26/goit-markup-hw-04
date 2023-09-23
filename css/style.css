@@ -9,6 +9,7 @@
     --text-color: #757575;
     --light-slate: #8E8F99;
     --GREEN: #31D0AA;
+    --light-slate: #8E8F99;
 }
 
 body {
@@ -378,6 +379,16 @@ address {
     justify-content: center;
 }
 
+.client-list {
+    border-radius: 4px;
+    border: 1px solid var(--light-slate);
+}
+
+.client-list:hover {
+    border-radius: 4px;
+    border: 1px solid var(--ocean);
+}
+
 .client-icon-container {
     display: flex;
     justify-content: center;
@@ -389,6 +400,11 @@ address {
     height: 56px;
     padding: 16px 32px;
     cursor: pointer;
+    fill: var(--light-slate);
+}
+
+.client-icons:hover {
+    fill: var(--ocean);
 }
 
 .footer-container {
